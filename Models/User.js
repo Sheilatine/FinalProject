@@ -9,10 +9,19 @@ const bcrypt = require('bcryptjs');
 // define schema(rules to follow to create collections aka tables in the DB)
 const userSchema = new Schema({
     name: {type: String, required: true},
-    email: { type: String, required: true, unique: true},
+    email: { type: String, required: true, unique: true, lowercase: true},
     password: {type: String, required: true},
-    phone_number: {type: Number, required: true},
-    university: {type: String, required: true},
+    profile: {firstName: String, lastName: String, avatar: String, phoneNumber: String},
+    university: {
+  name: { type: String, required: true },
+  domain: { type: String, required: true },
+  campus: { type: String, required: true },
+  studentId: { type: String, required: true },
+  type: { type: String, required: true }
+},
+    verification: {isVerified:{type: Boolean, default: false}, verificationMethod: String, verifiedAt: Date},
+    location: {country: String, city: String, coordinates: {latitude: Number, longitude: Number}},
+    preferences: { language: {type: String, default: "en"}, notifications: {type: Boolean, default: true}},
     role: {type: String, default: "user"}
 }, {timestamps: true});
 

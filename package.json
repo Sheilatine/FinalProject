@@ -10,10 +10,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongodb": "^6.20.0",
     "mongoose": "^8.19.1",
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sheilatine/FinalProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sheilatine/FinalProject/issues"
+  },
+  "homepage": "https://github.com/Sheilatine/FinalProject#readme"
 }
