@@ -5,7 +5,7 @@ const {Schema} = mongoose; // importing schema from mongoose
 
 
 // define schema(rules to follow to create collections aka tables in the DB)
-const userSchema = new mongoose.Schema({
+const userSchema = new Schema({
     name: {type: String, required: true},
     email: { type: String, required: true, unique: true},
     password: {type: String, required: true},
