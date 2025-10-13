@@ -1,5 +1,5 @@
 const { connectDB, mongoose } = require('./db');
-   // changed ../ to ./
+   
 
 const User = require('./Models/User');
 
