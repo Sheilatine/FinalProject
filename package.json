@@ -2,8 +2,10 @@
   "name": "mern-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev": "node server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,11 +13,15 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.20.0",
     "mongoose": "^8.19.1",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "uuid": "^13.0.0"
   },
   "repository": {
     "type": "git",
