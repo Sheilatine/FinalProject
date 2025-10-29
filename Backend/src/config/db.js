@@ -1,3 +1,5 @@
+//ROLE: Connects app to MongoDB database
+
 // Import the mongoose library for MongoDB object modeling
 const mongoose = require('mongoose');
 

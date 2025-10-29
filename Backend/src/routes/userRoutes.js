@@ -5,7 +5,7 @@ const express = require('express');
 const router = express.Router();
 
 // Import middleware for user input validation
-const validateUser = require("../middleware/validateUser");
+const validateUser = require("../middleware/validation");
 
 // Import middleware for route protection via JWT authentication
 const auth = require("../middleware/auth");

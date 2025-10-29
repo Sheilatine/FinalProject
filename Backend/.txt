@@ -1,4 +1,6 @@
 
+mpesa and flutterwave 
+cloudinary for images 
 
 
 C:\Users\User\Desktop\MERN\MERN Project
